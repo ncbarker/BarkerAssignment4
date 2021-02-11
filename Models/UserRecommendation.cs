@@ -11,7 +11,7 @@ namespace BarkerAssignment4.Models
 
         public string RestaurantName { get; set; }
 
-        public string FavoriteDish { get; set; }
-        public string RestaurantPhone { get; set; }
+        public string FavoriteDish { get; set; } = "It's all tasty!";
+        public string RestaurantPhone { get; set; } = "Coming soon!";
     }
 }

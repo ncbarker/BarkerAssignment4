@@ -16,13 +16,13 @@
 </div>
 <div class="list-group text-center">
     <table>
-        <thead class="text-center list-group-item text-dark">
+        <thead>
             <tr>Recommender</tr><tr>Restaurant</tr><tr>Favorite Dish</tr><tr>Phone Number</tr>
         </thead>
         <tbody>
             @foreach (BarkerAssignment4.Models.UserRecommendation x in Model)
             {
-                <tr class="list-group-item">
+                <tr>
                     <td>@x.Name</td>
                     <td>@x.RestaurantName</td>
                     <td>@x.FavoriteDish</td>
