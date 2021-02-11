@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model IEnumerable<string>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Top 5 Restaurants</title>
+        <meta name="viewport" content="width=device-width" />
+    </head>
+    <body>
+        <header>
+            <h1 class="bg-dark text-white">Top Restaurants in Provo</h1>
+        </header>
+        <div class="text-center">
+            <h1 class="display-4">Welcome</h1>
+            <p>Here are the top 5 best restaurants in Provo, Utah. Feel free to add a recommendation!</p>
+        </div>
+        <div class="text-center">
+            <img src="~/img/Provo.jpg" class="rounded" width="500"/>
+        </div>
+        <br />
+        <div class="list-group">
+            <ul>
+                @foreach (string r in Model)
+                {
+                    <li class="list-group-item">@r</li>
+                }
+            </ul>
+        </div>
+        <br />
+        <br />
+        <div class="text-center">
+            <a class="btn btn-dark rounded" asp-action="Recommendation">Add a recommendation</a>
+        </div>
+        
+
+    </body>
+    
+
+
+
+
+</html>

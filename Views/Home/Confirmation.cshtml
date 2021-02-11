@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "Recommendation for " + Model.RestaurantName + " was Submitted";
+}
+
+@model BarkerAssignment4.Models.UserRecommendation
+
+<div class="text-center">
+    <h1 class="text-center">@ViewData["Title"]</h1>
+
+    <p class="text-center">Thank you! I'll try it out soon!</p>
+</div><br />
+
+<div class="text-center">
+    <button class="rounded btn-dark" asp-action="RestList">View Recommended Restaurants</button>
+</div>

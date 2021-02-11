@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Recommendations";
+}
+
+@model BarkerAssignment4.Models.UserRecommendation
+
+<h1 class="text-center">@ViewData["Title"]</h1>
+
+<p class="text-center">Is there somewhere in Provo that I absolutely must try? Submit a recommendation here!</p>
+<div class="text-center">
+    <form asp-action="Recommendation" method="post">
+        <div>
+            <label asp-for="Name">Name:</label>
+            <input asp-for="Name"/>
+        </div>
+        <div>
+            <label asp-for="RestaurantName">Restaurant Name:</label>
+            <input asp-for="RestaurantName" />
+        </div>
+        <div>
+            <label asp-for="FavoriteDish">Favorite Dish:</label>
+            <input asp-for="FavoriteDish"/>
+        </div>
+        <div>
+            <label asp-for="RestaurantPhone">Restaurant Phone Number:</label>
+            <input asp-for="RestaurantPhone" />
+        </div>
+        <br />
+        <div class="text-center">
+            <button type="submit" class="btn-dark rounded">Submit recommendation</button>
+        </div>
+        
+    </form>
+</div>
+<br />
+<br />
+<div class="text-center">
+    <button class="rounded btn-dark" asp-action="RestList">View Recommended Restaurants</button>
+</div>
